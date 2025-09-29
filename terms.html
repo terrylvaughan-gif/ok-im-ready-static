@@ -11,13 +11,17 @@
     header .logo span {margin-right: 0.6em; width: 1.25em; height: 1.25em; background: #80c7b6; display: inline-block; border-radius: 10%; text-align: center; line-height: 1.25em; font-size: 1.1em; color: white;}
     nav a {text-decoration: none; color: #555; margin-left: 1.6em; font-weight: 500; transition: color 0.15s;}
     nav a:hover { color: #4fb477; }
-    .hero {display: flex; align-items: center; justify-content: center; padding: 4em 2em 3em 2em; min-height: 28em; gap: 2.5em; max-width: 900px; margin: 0 auto;}
-    .hero-text {max-width: 31em;}
+    .hero {display: flex; align-items: center; justify-content: center; padding: 3em 2em 2em 2em; min-height: 22em; gap: 2.5em; max-width: 900px; margin: 0 auto;}
+    .hero-text {max-width: 44em;}
     .hero-text h1 {font-size: 2.2em; font-weight: 800; margin-bottom: 0.3em; color: #141a21; line-height: 1.18em;}
-    .hero-text p {font-size: 1.13em; margin-bottom: 1.5em; color: #454b54;}
+    .terms-section {margin-bottom: 2em;}
+    .terms-section h2 {font-size: 1.16em; font-weight: 700; margin: 1.4em 0 0.6em 0; color:#222;}
+    .terms-section p, .terms-section ul {font-size: 1em; color:#454b54; margin-bottom:0.7em;}
+    .terms-section ul {padding-left:1.2em;}
     .cta-btn {background: #a7d7c5; color: #222; font-weight: 600; padding: 0.8em 1.5em; border: none; border-radius: 6px; font-size: 1em; cursor: pointer; transition: background 0.15s;}
     .cta-btn:hover { background: #4fb477; color: #fff; }
     footer {margin-top: 2em; background: #f3f7f4; padding: 2em; text-align: center; color: #888; font-size: 1em; border-top: 1px solid #e0e8e1;}
+    .terms-date {font-size:0.97em;color:#555;}
   </style>
 </head>
 <body>
@@ -34,37 +38,47 @@
     <section class="hero">
       <div class="hero-text">
         <h1>Terms of Service</h1>
-        <p>Terms of Service
-Last updated: August 28, 2024
+        <div class="terms-date">Last updated: August 28, 2024</div>
 
-Welcome to OK! I'm Ready! ("we," "our," "us"). These Terms of Service ("Terms") govern your use of our web application (the "Service"). By accessing or using the Service, you agree to be bound by these Terms.
-
-1. Your Account
-To use certain features of our Service, you must register for an account. You are responsible for maintaining the confidentiality of your account password and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
-
-2. User Content
-You retain all rights to any content you submit, post, or display on or through the Service ("User Content"). By submitting User Content, you grant us a worldwide, non-exclusive, royalty-free license to use, copy, reproduce, process, adapt, modify, publish, transmit, display, and distribute such User Content in any and all media or distribution methods.
-
-3. Prohibited Activities
-You agree not to engage in any of the following prohibited activities:
-
-Using the Service for any illegal purpose or in violation of any local, state, national, or international law.
-Posting User Content that is fraudulent, defamatory, obscene, or otherwise offensive.
-Impersonating any person or entity or falsely stating or otherwise misrepresenting your affiliation with a person or entity.
-4. Termination
-We may terminate or suspend your account and bar access to the Service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.
-
-5. Disclaimer
-The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.
-
-6. Governing Law
-These Terms shall be governed and construed in accordance with the laws of the jurisdiction in which our company is established, without regard to its conflict of law provisions.
-
-7. Changes to Terms
-We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-
-8. Contact Us
-If you have any questions about these Terms, please contact us through our support page.</p>
+        <div class="terms-section">
+          <p>Welcome to OK! I'm Ready! ("we," "our," "us"). These Terms of Service ("Terms") govern your use of our web application (the "Service"). By accessing or using the Service, you agree to be bound by these terms and conditions.</p>
+        </div>
+        <div class="terms-section">
+          <h2>1. Your Account</h2>
+          <p>To use certain features, you must register for an account. You are responsible for maintaining your password's confidentiality and all activity under your account. Notify us promptly of any unauthorized use.</p>
+        </div>
+        <div class="terms-section">
+          <h2>2. User Content</h2>
+          <p>You retain rights to content ("User Content") you submit, post, or display. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use, process, adapt, transmit, display, and distribute your User Content in any media or method.</p>
+        </div>
+        <div class="terms-section">
+          <h2>3. Prohibited Activities</h2>
+          <ul>
+            <li>Using the Service for illegal purposes or violating any law.</li>
+            <li>Posting User Content that is fraudulent, defamatory, obscene, or offensive.</li>
+            <li>Impersonating others or misrepresenting affiliations.</li>
+          </ul>
+        </div>
+        <div class="terms-section">
+          <h2>4. Termination</h2>
+          <p>We may terminate or suspend your account and access at our discretion, without prior notice or liability, for any reason including breach of these Terms.</p>
+        </div>
+        <div class="terms-section">
+          <h2>5. Disclaimer</h2>
+          <p>The Service is provided "AS IS" and "AS AVAILABLE," without any warranties. We disclaim all warranties, express or implied.</p>
+        </div>
+        <div class="terms-section">
+          <h2>6. Governing Law</h2>
+          <p>These Terms are governed by the laws of the jurisdiction in which our company is established.</p>
+        </div>
+        <div class="terms-section">
+          <h2>7. Changes to Terms</h2>
+          <p>We may revise these Terms at any time. Material changes will be announced at least 30 days in advance. Your continued use after changes means acceptance of updated Terms.</p>
+        </div>
+        <div class="terms-section">
+          <h2>8. Contact Us</h2>
+          <p>Questions? Please contact us via our <a href="index.html#contact">support page</a>.</p>
+        </div>
         <a href="index.html" class="cta-btn">Back to home</a>
       </div>
     </section>
