@@ -11,13 +11,15 @@
     header .logo span {margin-right: 0.6em; width: 1.25em; height: 1.25em; background: #80c7b6; display: inline-block; border-radius: 10%; text-align: center; line-height: 1.25em; font-size: 1.1em; color: white;}
     nav a {text-decoration: none; color: #555; margin-left: 1.6em; font-weight: 500; transition: color 0.15s;}
     nav a:hover { color: #4fb477; }
-    .hero {display: flex; align-items: center; justify-content: center; padding: 4em 2em 3em 2em; min-height: 28em; gap: 2.5em; max-width: 900px; margin: 0 auto;}
-    .hero-text {max-width: 31em;}
-    .hero-text h1 {font-size: 2.2em; font-weight: 800; margin-bottom: 0.3em; color: #141a21; line-height: 1.18em;}
-    .hero-text p {font-size: 1.13em; margin-bottom: 1.5em; color: #454b54;}
+    main {max-width: 900px; margin: 0 auto; padding: 2em;}
+    .privacy-heading {font-size: 2.1em; font-weight: 800; color: #141a21; margin-bottom: 0.7em;}
+    .policy-section {background: #fff; border-radius: 10px; box-shadow: 0 3px 8px rgba(80,200,180,0.08); padding: 2em 2.5em; margin-bottom: 2em;}
+    .policy-section h2 {font-size: 1.3em; color: #2a4c43; margin-top: 1.7em;}
+    .policy-section ul, .policy-section p {font-size: 1.08em; color: #444; margin-bottom: 1em;}
     .cta-btn {background: #a7d7c5; color: #222; font-weight: 600; padding: 0.8em 1.5em; border: none; border-radius: 6px; font-size: 1em; cursor: pointer; transition: background 0.15s;}
     .cta-btn:hover { background: #4fb477; color: #fff; }
     footer {margin-top: 2em; background: #f3f7f4; padding: 2em; text-align: center; color: #888; font-size: 1em; border-top: 1px solid #e0e8e1;}
+    a {color: #4fb477;}
   </style>
 </head>
 <body>
@@ -31,46 +33,55 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Privacy Policy</h1>
-        <p>Privacy Policy
-Last updated: August 28, 2024
+    <div class="privacy-heading">Privacy Policy</div>
+    <div class="policy-section">
+      <p>Last updated: August 28, 2024</p>
+      <p>
+        OK! I'm Ready! ("we", "our", "us") values your privacy. This Privacy Policy explains how we collect, use, share, and protect your information when you use our web application (the "Service").
+      </p>
 
-OK! I'm Ready! ("we," "our," "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our web application (the "Service").
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li><strong>Account Information:</strong> Name, email address, and password when you create an account.</li>
+        <li><strong>User Content:</strong> Information you supply when creating lists, reports, or other content within the Service.</li>
+        <li><strong>Communications:</strong> Data provided when you contact us directly for support or inquiries.</li>
+      </ul>
 
-1. Information We Collect
-We may collect personal information that you provide to us directly, such as:
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Provide, operate, and maintain the Service.</li>
+        <li>Improve, personalize, and expand our offerings.</li>
+        <li>Understand and analyze your use of the Service.</li>
+        <li>Communicate with you directly or through partners about customer service, updates, and related information.</li>
+      </ul>
 
-Account Information: When you create an account, we collect your name, email address, and password.
-User Content: We collect the information you provide when you create lists, reports, or other content within the Service.
-Communications: If you contact us directly, we may receive additional information about you.
-2. How We Use Your Information
-We use the information we collect for various purposes, including to:
+      <h2>3. How We Share Information</h2>
+      <ul>
+        <li><strong>With your consent:</strong> Only shared at your request or with your permission.</li>
+        <li><strong>Legal requirements:</strong> If required by law, regulation, or legal process.</li>
+      </ul>
 
-Provide, operate, and maintain our Service.
-Improve, personalize, and expand our Service.
-Understand and analyze how you use our Service.
-Communicate with you, either directly or through one of our partners, for customer service, to provide you with updates and other information relating to the Service.
-3. Sharing Your Information
-We do not share your personal information with third parties except in the following circumstances:
+      <h2>4. Data Security</h2>
+      <p>
+        Administrative, technical, and physical measures are used to protect your personal information. Despite best efforts, no security system is completely infallible.
+      </p>
 
-With Your Consent: We may share your information with your consent or at your direction.
-For Legal Reasons: We may share information if we believe it is required by law, regulation, or legal process.
-4. Data Security
-We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable.
+      <h2>5. Your Rights</h2>
+      <p>
+        Depending on your location, you may have rights to access, correct, or delete your personal data. Contact support to exercise these rights.
+      </p>
 
-5. Your Rights
-Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete your data. To exercise these rights, please contact us.
+      <h2>6. Changes to This Policy</h2>
+      <p>
+        We may update our Privacy Policy from time to time. Changes will be posted here, and continued use of the Service means acceptance of modified policies. Please review periodically.
+      </p>
 
-6. Changes to This Policy
-We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
-
-7. Contact Us
-If you have any questions about this Privacy Policy, please contact us through our support page.</p>
-        <a href="index.html" class="cta-btn">Back to home</a>
-      </div>
-    </section>
+      <h2>7. Contact Us</h2>
+      <p>
+        For any questions, reach out via the <a href="support.html">support page</a>.
+      </p>
+      <a href="index.html" class="cta-btn">Back to Home</a>
+    </div>
   </main>
   <footer>
     &copy; 2025 OK! I'm Ready. All rights reserved. <br>
