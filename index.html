@@ -6,98 +6,29 @@
   <meta name="description" content="OK! I'm Ready provides business automation, list management, and AI productivity tools for small teams.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: #f7faf9;
-      color: #222;
-    }
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 1.5em 2em; background: #f7faf9; border-bottom: 1px solid #eff1ef;
-    }
-    header .logo {
-      font-size: 1.35em; font-weight: 700;
-      display: flex; align-items: center;
-    }
-    header .logo span {
-      margin-right: 0.6em;
-      width: 1.25em; height: 1.25em;
-      background: #80c7b6;
-      display: inline-block; border-radius: 10%;
-      text-align: center; line-height: 1.25em;
-      font-size: 1.1em; color: white;
-    }
-    nav a {
-      text-decoration: none; color: #555;
-      margin-left: 1.6em; font-weight: 500;
-      transition: color 0.15s;
-    }
+    body {margin: 0; font-family: 'Inter', Arial, sans-serif; background: #f7faf9; color: #222;}
+    header {display: flex; justify-content: space-between; align-items: center; padding: 1.5em 2em; background: #f7faf9; border-bottom: 1px solid #eff1ef;}
+    header .logo {font-size: 1.35em; font-weight: 700; display: flex; align-items: center;}
+    header .logo span {margin-right: 0.6em; width: 1.25em; height: 1.25em; background: #80c7b6; display: inline-block; border-radius: 10%; text-align: center; line-height: 1.25em; font-size: 1.1em; color: white;}
+    nav a {text-decoration: none; color: #555; margin-left: 1.6em; font-weight: 500; transition: color 0.15s;}
     nav a:hover { color: #4fb477; }
-    .hero {
-      display: flex; align-items: center; justify-content: center;
-      padding: 4em 2em 3em 2em; min-height: 32em;
-      gap: 2.5em; max-width: 1200px; margin: 0 auto;
-    }
-    .hero-text {
-      max-width: 31em;
-    }
-    .hero-text h1 {
-      font-size: 2.5em; font-weight: 800; margin-bottom: 0.2em;
-      color: #141a21;
-      line-height: 1.18em;
-    }
-    .hero-text h1 .accent {
-      color: #4fb477;
-    }
-    .hero-text p {
-      font-size: 1.15em; margin-bottom: 1.5em;
-      color: #454b54;
-    }
-    .cta-btn {
-      background: #a7d7c5; color: #222; font-weight: 600;
-      padding: 0.85em 1.8em; border: none;
-      border-radius: 7px; font-size: 1em;
-      cursor: pointer; transition: background 0.15s;
-    }
+    .hero {display: flex; align-items: center; justify-content: center; padding: 4em 2em 3em 2em; min-height: 32em; gap: 2.5em; max-width: 1200px; margin: 0 auto;}
+    .hero-text {max-width: 31em;}
+    .hero-text h1 {font-size: 2.5em; font-weight: 800; margin-bottom: 0.2em; color: #141a21; line-height: 1.18em;}
+    .hero-text h1 .accent {color: #4fb477;}
+    .hero-text p {font-size: 1.15em; margin-bottom: 1.5em; color: #454b54;}
+    .cta-btn {background: #a7d7c5; color: #222; font-weight: 600; padding: 0.85em 1.8em; border: none; border-radius: 7px; font-size: 1em; cursor: pointer; transition: background 0.15s;}
     .cta-btn:hover { background: #4fb477; color: #fff; }
-    .hero-image img {
-      width: 28em; max-width: 90vw; border-radius: 1.2em;
-      box-shadow: 0 4px 24px rgba(44,100,80,0.10);
-    }
-    .features {
-      background: #e8f6f0; padding: 3.2em 1.5em;
-      display: flex; flex-direction: column; align-items: center;
-    }
-    .features h2 {
-      font-size: 2em; margin-bottom: 0.7em;
-      font-weight: 700; text-align: center;
-    }
-    .features-list {
-      display: flex; flex-wrap: wrap; gap: 2.5em;
-      justify-content: center; margin-top: 2em;
-    }
-    .feature-item {
-      background: #fff; border-radius: 10px; box-shadow: 0 2px 12px #edf1f1;
-      min-width: 14em; padding: 2.1em 1.4em 1.6em 1.4em;
-      display: flex; flex-direction: column; align-items: center;
-      text-align: center;
-    }
+    .hero-image img {width: 28em; max-width: 90vw; border-radius: 1.2em; box-shadow: 0 4px 24px rgba(44,100,80,0.10);}
+    .features {background: #e8f6f0; padding: 3.2em 1.5em; display: flex; flex-direction: column; align-items: center;}
+    .features h2 {font-size: 2em; margin-bottom: 0.7em; font-weight: 700; text-align: center;}
+    .features-list {display: flex; flex-wrap: wrap; gap: 2.5em; justify-content: center; margin-top: 2em;}
+    .feature-item {background: #fff; border-radius: 10px; box-shadow: 0 2px 12px #edf1f1; min-width: 14em; padding: 2.1em 1.4em 1.6em 1.4em; display: flex; flex-direction: column; align-items: center; text-align: center;}
     .feature-item h3 { margin: 0.8em 0 0.6em 0; font-size: 1.14em; }
     .feature-item p { font-size: 1em; color: #485862;}
-    footer {
-      margin-top: 3.5em; background: #f3f7f4; padding: 2em;
-      text-align: center; color: #888;
-      font-size: 1em; border-top: 1px solid #e0e8e1;
-    }
-    @media (max-width: 860px) {
-      .hero { flex-direction: column; padding: 2.5em 1.2em 1em 1.2em;}
-      .hero-image img { width: 100%; max-width: 90vw;}
-    }
-    @media (max-width: 540px) {
-      .features-list { flex-direction: column; gap: 1.5em;}
-      .feature-item { padding: 1.2em 0.7em;}
-    }
+    footer {margin-top: 3.5em; background: #f3f7f4; padding: 2em; text-align: center; color: #888; font-size: 1em; border-top: 1px solid #e0e8e1;}
+    @media (max-width: 860px) { .hero { flex-direction: column; padding: 2.5em 1.2em 1em 1.2em;} .hero-image img {width: 100%; max-width: 90vw;} }
+    @media (max-width: 540px) { .features-list { flex-direction: column; gap: 1.5em;} .feature-item { padding: 1.2em 0.7em;} }
   </style>
 </head>
 <body>
@@ -109,9 +40,9 @@
       <a href="#contact">Contact</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Service</a>
+      <a href="download.html">Download</a>
     </nav>
   </header>
-
   <main>
     <section class="hero">
       <div class="hero-text">
@@ -121,30 +52,29 @@
         <p>
           Create, manage, and share lists effortlessly. Generate insightful reports and get AI-powered assistance to boost your productivity.
         </p>
-        <a href="#about"><button class="cta-btn">Get Started... And It’s Free!</button></a>
+        <a href="#features"><button class="cta-btn">See Key Features</button></a>
       </div>
       <div class="hero-image">
         <img src="screenshot-hero.png" alt="OK! I'm Ready app screenshot" />
       </div>
     </section>
-
     <section class="features" id="features">
       <h2>Key Features</h2>
       <div class="features-list">
         <div class="feature-item">
-          <h3>List Management</h3>
+          <h3><a href="list-management.html" style="color:inherit; text-decoration:underline;">List Management</a></h3>
           <p>Easily create, edit, reorder, and delete lists and items.</p>
         </div>
         <div class="feature-item">
-          <h3>Report Generation</h3>
+          <h3><a href="report-generation.html" style="color:inherit; text-decoration:underline;">Report Generation</a></h3>
           <p>Generate beautiful reports from your lists and save them for later.</p>
         </div>
         <div class="feature-item">
-          <h3>AI Assistance</h3>
+          <h3><a href="ai-assistance.html" style="color:inherit; text-decoration:underline;">AI Assistance</a></h3>
           <p>Use our “Ask AI” feature to get insights and summaries.</p>
         </div>
         <div class="feature-item">
-          <h3>Share & Collaborate</h3>
+          <h3><a href="share-collaborate.html" style="color:inherit; text-decoration:underline;">Share & Collaborate</a></h3>
           <p>Share lists and reports with team members or friends.</p>
         </div>
       </div>
@@ -159,7 +89,8 @@
     </section>
   </main>
   <footer>
-    &copy; 2025 OK! I'm Ready. All rights reserved.
+    &copy; 2025 OK! I'm Ready. All rights reserved. <br>
+    <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="download.html">Download</a>
   </footer>
 </body>
 </html>
